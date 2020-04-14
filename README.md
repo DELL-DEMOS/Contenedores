@@ -83,13 +83,13 @@ Ps.2: Para los que estan utilizando Vagrant de esto repositorio la instalacion d
 
 # Comando de construir:
 
-                                                 sudo podman build .    
+                                                 sudo podman -t localhost/demo build .    
 
                   ** -- haga caso a el pequño punto, es tu directorio actual donde creo su Dockerfile -- **
 
 # Verifica tu imagen y pone a jalar!
 
-                                                  sudo podman run -dit -p 80:80 
+                                                  sudo podman run -dit -p 80:80 localhost/demo
 
 # Ahora acesa la direction IP con el comando Curl
 
