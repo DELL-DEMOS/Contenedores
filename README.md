@@ -78,6 +78,7 @@ Ps.2: Para los que estan utilizando Vagrant de esto repositorio la instalacion d
 # Ahora acesa la direction IP con el comando Curl
 
                                                   curl -I http://localhost:80
+                                                  sudo podman stop httpd
 
 # Ahora ya puedes apagar la imagen de sistema Operativo de vagrant
 
