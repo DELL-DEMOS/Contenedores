@@ -11,8 +11,8 @@ Vagrant.configure("2") do |config|
      vb.memory = "8192"
      vb.cpus = 4
   end
-  $create_filesystem = <<SCRIPT
-  dnf install -y podman
-  SCRIPT
-  config.vm.provision "shell", inline: $create_filesystem
+$install_podman = <<SCRIPT
+dnf install -y podman
+SCRIPT
+  config.vm.provision "shell", inline: $install_podman
 end
