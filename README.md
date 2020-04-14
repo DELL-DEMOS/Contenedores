@@ -71,28 +71,16 @@ Ps.2: Para los que estan utilizando Vagrant de esto repositorio la instalacion d
                                                  sudo podman image rm <id de la imagen>
 
 # Bueno, me gustaria tener um Web Server. ¿Como hacerlo?
-# Creando un Dockerfile desde cero:
-# Crea el archivo Dockerfile con el contenido
+# Sensilo, solo llama a una imagen que tiene webserver
 
-                                                 FROM centos:latest
-                                                 RUN yum -y install httpd
-                                                 CMD [“/usr/sbin/httpd”, “-D”, “FOREGROUND”]
-                                                 EXPOSE 80
-
-# Listo!
-
-# Comando de construir:
-
-                                                 sudo podman build -t localhost/demo .    
-
-                  ** -- haga caso a el pequño punto, es tu directorio actual donde creo su Dockerfile -- **
-
-# Verifica tu imagen y pone a jalar!
-
-                                                  sudo podman run -dit -p 80:80 localhost/demo
+                                               sudo podman run -d -p 80:80 httpd
 
 # Ahora acesa la direction IP con el comando Curl
 
                                                   curl -I http://localhost:80
 
-# Listo
+# Ahora ya puedes apagar la imagen de sistema Operativo de vagrant
+
+                                                  vagrant destroy
+                                                  
+# Listo!
