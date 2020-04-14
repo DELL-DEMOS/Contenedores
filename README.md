@@ -8,8 +8,9 @@ Necesitas tener instalado en su equipo Vagrant ( version 2.2.7 ) VirtualBox ( Ve
 
 # Links :
 
-https://www.vagrantup.com/downloads.html
-https://www.virtualbox.org/wiki/Downloads
+1 - https://www.vagrantup.com/downloads.html
+
+2 - https://www.virtualbox.org/wiki/Downloads
 
 # Instalacion de podman en Centos 8 / RHEL 8 -- que no estan utilizando esta recepta de Vagrant --
 
