@@ -83,7 +83,7 @@ Ps.2: Para los que estan utilizando Vagrant de esto repositorio la instalacion d
 
 # Comando de construir:
 
-                                                 sudo podman -t localhost/demo build .    
+                                                 sudo podman build -t localhost/demo .    
 
                   ** -- haga caso a el pequño punto, es tu directorio actual donde creo su Dockerfile -- **
 
